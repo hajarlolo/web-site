@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our content</title>
+    <style>
+        * {
+            background-color: #623e38;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            margin-top: 4%;
+        }
+
+        .section h2 {
+            text-align: center;
+            color: rgb(255, 255, 255);
+            margin: 100px 0 2rem 0;
+            font-size: 40px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: italic;
+            text-decoration: underline;
+            animation-name: titre;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes titre {
+            0% {
+                color: white;
+            }
+
+            25% {
+                color: wheat;
+            }
+
+            50% {
+                color: rgb(243, 205, 134);
+            }
+
+            75% {
+                color: wheat;
+            }
+
+            100% {
+                color: white;
+            }
+        }
+
+        .recipes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .recipe {
+            background: #3f2504;
+            box-shadow: 10px 10px rgba(0, 0, 0, 0.334);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.8s ease;
+        }
+
+        .recipe img {
+            width: 100%;
+            height: 200px;
+            opacity: 0.8;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .recipe:hover img {
+            transform: scale(1.05);
+        }
+
+        .recipe h3 {
+            margin: 1rem;
+            color: wheat;
+            background-color: #3f2504;
+            text-decoration: underline;
+        }
+
+        .recipe p {
+            margin: 0 1rem 1rem;
+            color: white;
+            background-color: #3f2504;
+        }
+
+        .recipe a {
+            display: block;
+            text-align: center;
+            margin: 0 1rem 1rem;
+            padding: 0.8rem;
+            border: 3px dashed wheat;
+            background-color: #3f2504;
+            color: wheat;
+            font-size: 17px;
+            border-radius: 5px;
+            transition: background-color 0.5s ease;
+        }
+
+        .recipe a:hover {
+            background-color: wheat;
+            color: #3f2504;
+            border-style: dashed;
+            border-color: #3f2504;
+        }
+
+
+        nav {
+            width: 100%;
+            height: 10%;
+            margin: 0px;
+            position: absolute;
+            top: 0px;
+            background-color: transparent;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            gap: 40px;
+        }
+
+        nav ul li {
+            position: relative;
+            padding: 20px 140px;
+        }
+
+        nav ul li a {
+            color: #ceaa5b;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 17px;
+            font-family: Arial, sans-serif;
+            transition: color 0.3s ease;
+        }
+
+        /* Ligne animée */
+        nav ul li::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50px;
+            width: 0;
+            height: 2px;
+            background-color: #ceaa5b;
+            transition: width 0.3s ease;
+        }
+
+        /* Effet hover */
+        nav ul li:hover::after {
+            width: 100%;
+        }
+
+        .logo {
+            width: 110px;
+            margin: 0;
+            padding: 0 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <img class="logo" src="lolo.png">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="book.html">Book</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+    <div class="underline"></div>
+    <div class="container">
+        <section class="section">
+            <h2>Entrées</h2>
+            <div class="recipes">
+                <div class="recipe">
+                    <img src="hrira.jpeg" alt="Harira">
+                    <h3>Harira</h3>
+                    <p>Une soupe marocaine traditionnelle, riche et réconfortante,
+                        Parfaite pour commencer un repas ou pour le repas du Ramadan.</p>
+                    <a href="prices.html"> Voir les prix </a>
+                </div>
+                <div class="recipe">
+                    <img src="Taktouka.png" alt="Taktouka">
+                    <h3>Taktouka</h3>
+                    <p>Une salade marocaine délicatement assaisonné avec des épices, de l’ail et de la coriandre. Idéal
+                        comme accompagnement ou tartinade.</p>
+                    <a href="prices.html"> Voir les prix </a>
+                </div>
+                <div class="recipe">
+                    <img src="zaalouk.jpg" alt="Zaalouk">
+                    <h3>Zaalouk</h3>
+                    <p>Un caviar d’aubergines marocain avec des poivrons grillés et de tomates, parfumée avec de l’huile
+                        d’olive et des épices.</p>
+                    <a href="prices.html"> Voir les prix </a>
+                </div>
+                <div class="recipe">
+                    <img src="Maâkouda.png" alt="maakouda">
+                    <h3>Maâkouda</h3>
+                    <p>De délicieuses galettes de pommes de terre croustillantes à l’extérieur et moelleuses à
+                        l’intérieur.</p>
+                    <a href="prices.html"> Voir les prix </a>
+                </div>
+                <div class="recipe">
+                    <img src="Salade de poivrons grillés.jpg" alt="Salade de poivrons grillées">
+                    <h3>Salade de poivrons grillées</h3>
+                    <p>Une entrée fraîche et savoureuse, composée de poivrons grillés, d’ail et d’un filet d’huile
+                        d’olive.</p>
+                    <a href="prices.html"> Voir les prix </a>
+                </div>
+                <div class="recipe">
+                    <img src="briouates-poulet.jpg" alt="briouates au poulet">
+                    <h3> Briouates au poulet</h3>
+                    <p>Des triangles croustillants de pâte filo, farcis avec un mélange savoureux de poulet et d'épices
+                        marocaines.</p>
+                    <a href="prices.html"> Voir les prix </a>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <h2>Plats Principaux</h2>
+            <div class="recipes">
+                <div class="recipe">
+                    <img src="couscous.jpg" alt="couscous royal">
+                    <h3>Couscous royal</h3>
+                    <p>Un plat emblématique marocain composé de semoule fine, de légumes variés, de viandes et d’épices.
+                    </p>
+                    <a href="prices.html"> Voir les prix </a>
+                </div>
+                <div class="recipe">
+                    <img src="SEFFA.jpg" alt="seffa sucrée">
+                    <h3>Seffa sucrés</h3>
+                    <p>Plat sucré-salé composé de vermicelles cuits à la vapeur, garnis de sucre glace, cannelle et
+                        amandes</p>
+                    <a href="prices.html"> Voir les prix </a>
+                </div>
+                <div class="recipe">
+                    <img src="Rfissa.jpg" alt="Rfissa avec Poulet">
+                    <h3>Rfissa avec Poulet</h3>
+                    <p>Un plat réconfortant à base de msemen, poulet parfumé aux épices et lentilles.</p>
+                    <a href="prices.html"> Voir les prix </a>
+                </div>
+                <div class="recipe">
+                    <img src="Poisson chermoula au four.jpg" jpg" alt="Poisson chermoula au four">
+                    <h3>Poisson chermoula au four</h3>
+                    <p>Du poisson mariné dans une sauce chermoula parfumée, cuit au four pour un goût authentique.</p>
+                    <a href="prices.html"> Voir les prix </a>
+                </div>
+                <div class="recipe">
+                    <img src="pastilla polet.jpg" alt="Pastilla au poulet et amandes">
+                    <h3>Pastilla au poulet et amandes</h3>
+                    <p>Tourte sucrée-salée délicate, associant poulet tendre et amandes croquantes dans une pâte
+                        croustillante.</p>
+                    <a href="prices.html"> Voir les prix </a>
+                </div>
+                <div class="recipe">
+                    <img src="C:\Users\HP\Downloads\pastilla poisson.jpg" alt="Pastilla au poisson">
+                    <h3>Pastilla au poisson</h3>
+                    <p>Une variante raffinée de la pastilla traditionnelle, avec une farce à base de fruits de mer et
+                        d’épices.</p>
+                    <a href="prices.html"> Voir les prix </a>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <h2>Desserts</h2>
+            <div class="recipes">
+                <div class="recipe">
+                    <img src="kâak.jpg" alt="Kaâk marocain">
+                    <h3>Kaâk marocain</h3>
+                    <p>Des biscuits sablés légèrement croquants, parfumés au sésame et souvent servis avec du thé.</p>
+                    <a href="prices.html"> Voir les prix </a>
+                </div>
+                <div class="recipe">
+                    <img src="makrout.jpg" alt="Makrout">
+                    <h3>Makrout</h3>
+                    <p>Des gâteaux traditionnels à base de semoule farcis aux dattes, frits puis enrobés de miel.</p>
+                    <a href="prices.html"> Voir les prix </a>
+                </div>
+                <div class="recipe">
+                    <img src="images\chebakia.jpg" alt="Chebakia">
+                    <h3>Chebakia</h3>
+                    <p>Une pâtisserie en forme de fleur, frite puis trempée dans du miel et saupoudrée de graines de
+                        sésame.</p>
+                    <a href="prices.html"> Voir les prix </a>
+                </div>
+                <div class="recipe">
+                    <img src="images\fekkas.jpg" alt="Fekkas">
+                    <h3>Fekkas</h3>
+                    <p>Des biscuits croquants aux amandes ou aux raisins secs, parfaits pour accompagner un thé à la
+                        menthe.</p>
+                    <a href="prices.html"> Voir les prix </a>
+                </div>
+                <div class="recipe">
+                    <img src="images\cake.jpg" alt="Meskouta au citron">
+                    <h3>Meskouta au citron</h3>
+                    <p>gâteau léger et moelleux, délicatement parfumé au citron. Idéal pour accompagner un thé à la
+                        menthe .</p>
+                    <a href="prices.html"> Voir les prix </a>
+                </div>
+                <div class="recipe">
+                    <img src="images\plateau.png" alt="Plateau de halwa">
+                    <h3>Plateau de halwa</h3>
+                    <p>Un assortiment sucré composé de différentes confiseries marocaines colorées et délicates.</p>
+                    <a href="prices.html"> Voir les prix </a>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <h2>Boissons</h2>
+            <div class="recipes">
+                <div class="recipe">
+                    <img src="images\the.png" alt="Thé">
+                    <h3>Thé</h3>
+                    <p>La boisson nationale du Maroc, préparée avec du thé vert, des feuilles de menthe fraîche et du
+                        sucre.</p>
+                    <a href="prices.html"> Voir les prix </a>
+                </div>
+                <div class="recipe">
+                    <img src="images\Jus d'orange frais.jpeg" alt="Jus d'orange frais">
+                    <h3>Jus d'orange frais</h3>
+                    <p>Fait à partir des oranges locales juteuses et sucrées, ce jus est un incontournable.</p>
+                    <a href="prices.html"> Voir les prix </a>
+                </div>
+                <div class="recipe">
+                    <img src="images\Jus d'avocat.jpeg" alt="Jus d'avocat">
+                    <h3>Jus d'avocat</h3>
+                    <p>Une boisson mélangée avec du lait, du sucre et des amandes, offrant une texture riche et un goût
+                        doux.</p>
+                    <a href="prices.html"> Voir les prix </a>
+                </div>
+                <div class="recipe">
+                    <img src="images\Panaché.jpeg" alt="Panaché ">
+                    <h3>Panaché </h3>
+                    <p>Mélange de fruits frais,enrichi avec des fruits secs pour un smoothie consistant.</p>
+                    <a href="prices.html"> Voir les prix </a>
+                </div>
+                <div class="recipe">
+                    <img src="images\Lben.jpeg" alt="Lben ">
+                    <h3>Lben </h3>
+                    <p>Une boisson lactée légèrement fermentée, rafraîchissante .</p>
+                    <a href="prices.html"> Voir les prix </a>
+                </div>
+                <div class="recipe">
+                    <img src="images\Atay bel louiza.jpeg" alt="Atay bel louiza">
+                    <h3> Atay bel louiza</h3>
+                    <p>Un thé délicatement parfumé avec des fleurs d'oranger séchées,avec ses propriétés relaxantes.</p>
+                    <a href="prices.html"> Voir les prix </a>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <h2>Salades</h2>
+            <div class="recipes">
+                <div class="recipe">
+                    <img src="images\Salade Niçoise.jpeg" alt=" ">
+                    <h3>Salade Niçoise </h3>
+                    <p>Une salade colorée et complète composée de thon, œufs durs, tomates, olives, haricots verts et
+                        pommes de terre, souvent assaisonnée d'une vinaigrette légère.</p>
+                    <a href="prices.html"> Voir les prix </a>
+                </div>
+                <div class="recipe">
+                    <img src="images\Salade César.jpeg" alt=" ">
+                    <h3>Salade César </h3>
+                    <p>Appréciée dans les restaurants marocains, elle est composée de laitue croquante, poulet grillé,
+                        croûtons, parmesan et une sauce crémeuse à base d’anchois.</p>
+                    <a href="prices.html"> Voir les prix </a>
+                </div>
+                <div class="recipe">
+                    <img src="images\Salade Caprese.jpeg" alt="">
+                    <h3>Salade Caprese</h3>
+                    <p>Une salade italienne simple et élégante, à base de tomates fraîches, mozzarella, feuilles de
+                        basilic et un filet d’huile d’olive.</p>
+                    <a href="prices.html"> Voir les prix </a>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Experts</title>
+    <style>
+        /*****************************contenu**************************** */
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("back.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        /*****************************menu**************************** */
+
+        nav {
+            width: 100%;
+            margin: 0px auto 40px auto;
+            position: fixed;
+            top: 0px;
+            background-color: transparent;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            gap: 40px;
+        }
+
+        nav ul li {
+            position: relative;
+            padding: 28px 150px;
+        }
+
+        nav ul li a {
+            color: #ceaa5b;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 17px;
+            font-family: Arial, sans-serif;
+            transition: color 0.3s ease;
+        }
+
+        /* Ligne animée */
+        nav ul li::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 55px;
+            width: 0;
+            height: 2px;
+            background-color: #ceaa5b;
+            transition: width 0.3s ease;
+        }
+
+        /* Effet hover */
+        nav ul li:hover::after {
+            width: 100%;
+        }
+
+        .logo {
+            width: 150px;
+            margin: 0;
+            padding: 0;
+        }
+
+        /*****************************contenu**************************** */
+
+        div {
+            background-image: url('pages.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 70%;
+            width: 100%;
+            position: absolute;
+            margin-top: 45%;
+            text-align: center;
+        }
+
+        form {
+            margin-left: 33%;
+        }
+
+        .h1 {
+            text-decoration: underline;
+            text-align: center;
+            color: #ceaa5b;
+            font-size: 35px;
+            font-family: monospace;
+            width: 28ch;
+            text-wrap: nowrap;
+            overflow: hidden;
+            animation: typing 5s steps(28) infinite alternate;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0ch;
+            }
+        }
+
+        div p {
+            color: #0e0d0d;
+            font-size: 14px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 200;
+        }
+
+        div .lolo {
+            width: 250px;
+        }
+
+        .titre {
+            color: #ceaa5b;
+            font-size: 17px;
+            text-decoration: underline;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 300;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="content.html">Menu</a></li>
+            <img class="logo" src="lolo.png">
+            <li><a href="book.html">Book</a></li>
+        </ul>
+    </nav>
+    <div><br>
+        <img class="lolo" src="lolo.png">
+        <form class="h1">WELCOME TO OUR RESTAURANT !</form><br>
+        <p class="titre">Découvrez Notre Histoire<br>
+        <p>Niché au cœur de la ville, notre restaurant vous fait découvrir les saveurs riches du Maroc.<br>
+            Inspirés par nos traditions, nous préparons nos plat avec des épices authentiques et des ingrédients frais.
+            <br>
+            Des tajines mijotés aux douceurs sucrées de la pastilla, chaque bouchée raconte une histoire. <br>
+            Notre ambiance chaleureuse et notre hospitalité vous transporteront dans un riad marocain. <br>
+            Venez vivre la magie de la cuisine marocaine avec nous dès aujourd'hui !</p>
+        </p>
+    </div>
+
+</body>
+
+</html>

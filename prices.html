@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: #623e38;
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            border: 4px solid #e4c787;
+            color: whitesmoke;
+            text-align: center;
+            width: 700px;
+            margin: auto;
+            margin-bottom: 40px;
+        }
+
+        th {
+            color: #e4c787;
+            font-size: 25px;
+            font-family: serif;
+        }
+
+        td {
+            font-size: 20px;
+            font-family: serif;
+        }
+
+        div {
+            margin-top: 8%;
+        }
+
+        /*****************************menu**************************** */
+        nav {
+            width: 100%;
+            height: 10%;
+            margin: 0px;
+            position: absolute;
+            top: 0px;
+            background-color: transparent;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            gap: 40px;
+        }
+
+        nav ul li {
+            position: relative;
+            padding: 20px 150px;
+        }
+
+        nav ul li a {
+            color: #ceaa5b;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 17px;
+            font-family: Arial, sans-serif;
+            transition: color 0.3s ease;
+        }
+
+        /* Ligne animée */
+        nav ul li::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50px;
+            width: 0;
+            height: 2px;
+            background-color: #ceaa5b;
+            transition: width 0.3s ease;
+        }
+
+        /* Effet hover */
+        nav ul li:hover::after {
+            width: 100%;
+        }
+
+        .logo {
+            width: 130px;
+            margin: 0;
+            padding: 0 100px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <img class="logo" src="lolo.png">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="book.html">Book</a></li>
+            <li><a href="content.html">Menu</a></li>
+        </ul>
+    </nav>
+    <div>
+        <table cellspacing=20 cellpadding=10 border="1">
+            <tr>
+                <th colspan="2">Entrées</th>
+            </tr>
+            <tr>
+                <td>Harira</td>
+                <td>20dh</td>
+            </tr>
+            <tr>
+                <td>Taktouka</td>
+                <td>15dh</td>
+            </tr>
+            <tr>
+                <td>Zaalouk</td>
+                <td>15dh</td>
+            </tr>
+            <tr>
+                <td>Maâkouda</td>
+                <td>15dh</td>
+            </tr>
+            <tr>
+                <td>Salade de poivrons</td>
+                <td>15dh</td>
+            </tr>
+            <tr>
+                <td>briouates-poulet</td>
+                <td>15dh</td>
+            </tr>
+        </table>
+
+        <table cellspacing=20 cellpadding=10 border="1">
+            <tr>
+                <th colspan="2">Plats Principaux </th>
+            </tr>
+            <tr>
+                <td>Couscous royal</td>
+                <td>120dh</td>
+            </tr>
+            <tr>
+                <td>Seffa sucrés</td>
+                <td>120dh</td>
+            </tr>
+            <tr>
+                <td>Rfissa avec Poulet</td>
+                <td>120dh</td>
+            </tr>
+            <tr>
+                <td>Poisson chermoula</td>
+                <td>120dh</td>
+            </tr>
+            <tr>
+                <td>Pastilla au poulet</td>
+                <td>120dh</td>
+            </tr>
+            <tr>
+                <td>Pastilla au poisson</td>
+                <td>120dh</td>
+            </tr>
+        </table>
+        <table cellspacing=20 cellpadding=10 border="1">
+            <tr>
+                <th colspan="2">Desserts</th>
+            </tr>
+            <tr>
+                <td>Kaâk marocain</td>
+                <td>10dh</td>
+            </tr>
+            <tr>
+                <td>Makrout</td>
+                <td>10dh</td>
+            </tr>
+            <tr>
+                <td>Chebakia</td>
+                <td>10dh</td>
+            </tr>
+            <tr>
+                <td>Fekkas</td>
+                <td>10dh</td>
+            </tr>
+            <tr>
+                <td>Meskouta au citron</td>
+                <td>30dh</td>
+            </tr>
+            <tr>
+                <td>Plateau de halwa</td>
+                <td>100dh</td>
+            </tr>
+        </table>
+        <table cellspacing=20 cellpadding=10 border="1">
+            <tr>
+                <th colspan="2">Boissons</th>
+            </tr>
+            <tr>
+                <td>Thé</td>
+                <td>20dh</td>
+            </tr>
+            <tr>
+                <td>Jus d'orange</td>
+                <td>7dh</td>
+            </tr>
+            <tr>
+                <td>Jus d'avocat</td>
+                <td>8dh</td>
+            </tr>
+            <tr>
+                <td>Panaché</td>
+                <td>8dh</td>
+            </tr>
+            <tr>
+                <td>Lben</td>
+                <td>4dh</td>
+            </tr>
+            <tr>
+                <td>Thé au louiza</td>
+                <td>20dh</td>
+            </tr>
+        </table>
+        <table cellspacing=20 cellpadding=10 border="1">
+            <tr>
+                <th colspan="2">Salades</th>
+            </tr>
+            <tr>
+                <td>Salade Niçoise</td>
+                <td>30dh</td>
+            </tr>
+            <tr>
+                <td>Salade César</td>
+                <td>30dh</td>
+            </tr>
+            <tr>
+                <td>Salade Caprese</td>
+                <td>30dh</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <style>
+        /*****************************contenu**************************** */
+        img {
+            width: 40px;
+        }
+
+        form {
+            font-size: 16px;
+            margin-top: 15%;
+            background: #fff;
+            padding: 2rem;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 20px 10px rgba(0, 0, 0, 0.334);
+            width: 45%;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, sans-serif;
+            background-color: #623e38;
+            color: #623e38;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+        }
+
+        form li {
+            list-style-type: none;
+            float: left;
+            text-align: center;
+            padding: 15px;
+        }
+
+        a {
+            color: #ceaa5b;
+        }
+
+        /*****************************menu**************************** */
+
+        nav {
+            width: 100%;
+            height: 10%;
+            margin: 0px;
+            position: absolute;
+            top: 0px;
+            background-color: transparent;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            gap: 40px;
+        }
+
+        nav ul li {
+            position: relative;
+            padding: 20px 150px;
+        }
+
+        nav ul li a {
+            color: #ceaa5b;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 17px;
+            font-family: Arial, sans-serif;
+            transition: color 0.3s ease;
+        }
+
+        /* Ligne animée */
+        nav ul li::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50px;
+            width: 0;
+            height: 2px;
+            background-color: #ceaa5b;
+            transition: width 0.3s ease;
+        }
+
+        /* Effet hover */
+        nav ul li:hover::after {
+            width: 100%;
+        }
+
+        .logo {
+            width: 130px;
+            margin: 0;
+            padding: 0 100px;
+        }
+    </style>>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <img class="logo" src="lolo.png">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="book.html">Book</a></li>
+            <li><a href="content.html">Menu</a></li>
+        </ul>
+    </nav>
+    <form>
+        <p>Vous pouvez nous contacter dans ce numéro:&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">0123456789</a></p>
+        <p>pour l'occalisation de notre restaurant,vous la trouverai ici:&nbsp;&nbsp;<a href="#">www.Cooking
+                Expert.com</a></p>
+        <p>Et vous pouverz voir notre profil via : </p><br>
+        <li><a href="#"><img src="instagram.png"></a><br><br><a href="#">@Cooking_Experts</a></li>
+        <li><a href="#"><img src="facebook.jpg"></a><br><br><a href="#">Cooking Experts</a></li>
+        <li><a href="#"><img src="tiktok.jpg"></a><br><br><a href="#">Cooking Experts_Maroc</a></li>
+        <li><a href="#"><img src="youutube.png"></a><br><br><a href="#">Cooking_Experts</a></li>
+    </form>
+</body>
+
+</html>
